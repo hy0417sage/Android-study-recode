@@ -14,13 +14,13 @@
         android:theme="@style/Theme.AndroidStudy"
         tools:targetApi="31">
         <activity
-            android:name=".DataBindingTestActivity"
-            android:exported="false" />
-        <activity
             android:name=".jetpack_ex.JetpackStudyActivity"
             android:exported="false" />
         <activity
             android:name=".jetpack_ex.viewbinding_ex.ViewBingingTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jetpack_ex.databinding_ex.DataBindingTestActivity"
             android:exported="false" />
         <activity
             android:name="com.hy0417sage.android_study.MainActivity"
