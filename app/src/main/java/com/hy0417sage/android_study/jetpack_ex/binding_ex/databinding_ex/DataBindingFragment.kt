@@ -1,4 +1,4 @@
-package com.hy0417sage.android_study.jetpack_ex.databinding_ex
+package com.hy0417sage.android_study.jetpack_ex.binding_ex.databinding_ex
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil
 import com.hy0417sage.android_study.R
 import com.hy0417sage.android_study.databinding.FragmentDatabindingTestBinding
 
-class DataBindingTestFragment : Fragment() {
+class DataBindingFragment : Fragment() {
 
     lateinit var binding : FragmentDatabindingTestBinding
 

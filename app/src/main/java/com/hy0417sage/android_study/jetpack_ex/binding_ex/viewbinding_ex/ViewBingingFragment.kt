@@ -1,4 +1,4 @@
-package com.hy0417sage.android_study.jetpack_ex.viewbinding_ex
+package com.hy0417sage.android_study.jetpack_ex.binding_ex.viewbinding_ex
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.hy0417sage.android_study.databinding.FragmentViewbindingTestBinding
 
-class ViewBingingTestFragment : Fragment() {
+class ViewBingingFragment : Fragment() {
 
     private var _binding: FragmentViewbindingTestBinding? = null
     private val binding get() = _binding!!

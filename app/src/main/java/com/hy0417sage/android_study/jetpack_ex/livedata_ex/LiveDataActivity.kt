@@ -8,10 +8,12 @@ import androidx.lifecycle.Observer
 import com.hy0417sage.android_study.R
 import com.hy0417sage.android_study.databinding.ActivityLivedataTestBinding
 
-class LiveDataTestActivity : AppCompatActivity() {
+class LiveDataActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityLivedataTestBinding
+    private lateinit var binding: ActivityLivedataTestBinding
     private var testMutableLiveData = MutableLiveData(0)
+
+    val manager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,22 @@ class LiveDataTestActivity : AppCompatActivity() {
 
         binding.button.setOnClickListener {
             testMutableLiveData.value = testMutableLiveData.value!!.plus(1)
+        }
+
+        binding.fragment1.setOnClickListener {
+            val transformations1 = manager.beginTransaction()
+            val fragment1 = LiveData1Fragment()
+            transformations1.replace(R.id.textView, fragment1)
+            transformations1.addToBackStack(null)
+            transformations1.commit()
+        }
+
+        binding.fragment2.setOnClickListener {
+            val transformations2 = manager.beginTransaction()
+            val fragment2 = LiveData2Fragment()
+            transformations2.replace(R.id.textView, fragment2)
+            transformations2.addToBackStack(null)
+            transformations2.commit()
         }
 
         //testMutableLiveData 가 바뀌는 것을 관찰 : testMutableLiveData 값이 변경될 때 마다 로그가 실행된다.

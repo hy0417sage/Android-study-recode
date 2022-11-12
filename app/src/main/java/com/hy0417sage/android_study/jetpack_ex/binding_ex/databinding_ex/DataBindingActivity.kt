@@ -1,4 +1,4 @@
-package com.hy0417sage.android_study.jetpack_ex.databinding_ex
+package com.hy0417sage.android_study.jetpack_ex.binding_ex.databinding_ex
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.hy0417sage.android_study.R
 import com.hy0417sage.android_study.databinding.ActivityDatabindingTestBinding
 
-class DataBindingTestActivity : AppCompatActivity() {
+class DataBindingActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityDatabindingTestBinding
 

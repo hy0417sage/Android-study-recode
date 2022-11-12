@@ -26,10 +26,10 @@
             android:name=".jetpack_ex.JetpackStudyActivity"
             android:exported="false" />
         <activity
-            android:name=".jetpack_ex.viewbinding_ex.ViewBingingTestActivity"
+            android:name=".jetpack_ex.binding_ex.viewbinding_ex.ViewBingingActivity"
             android:exported="false" />
         <activity
-            android:name=".jetpack_ex.databinding_ex.DataBindingTestActivity"
+            android:name=".jetpack_ex.binding_ex.databinding_ex.DataBindingActivity"
             android:exported="false" />
         <activity
             android:name="com.hy0417sage.android_study.MainActivity"

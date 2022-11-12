@@ -1,10 +1,10 @@
-package com.hy0417sage.android_study.jetpack_ex.viewbinding_ex
+package com.hy0417sage.android_study.jetpack_ex.binding_ex.viewbinding_ex
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.hy0417sage.android_study.databinding.ActivityViewbindingTestBinding
 
-class ViewBingingTestActivity : AppCompatActivity() {
+class ViewBingingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityViewbindingTestBinding
 
