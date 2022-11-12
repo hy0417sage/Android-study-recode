@@ -27,8 +27,8 @@ class LiveDataViewModelTestActivity : AppCompatActivity() {
             viewModel.plusLiveDataValue()
         }
 
-        viewModel.testMutableLiveData.observe(this, Observer {
-            Log.d("testMutableLiveData", viewModel.testMutableLiveData.value.toString())
+        viewModel.testLiveData.observe(this, Observer {
+            Log.d("testMutableLiveData", it.toString())
         })
     }
 }
