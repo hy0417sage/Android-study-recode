@@ -5,9 +5,11 @@
       <map>
         <entry key="app/src/main/res/layout/activity_livedata_test.xml" value="0.2164855072463768" />
         <entry key="app/src/main/res/layout/activity_livedata_viewmodel_test.xml" value="0.2164855072463768" />
+        <entry key="app/src/main/res/layout/activity_viewmodel_af_test.xml" value="0.22418478260869565" />
         <entry key="app/src/main/res/layout/activity_viewmodel_test.xml" value="0.2164855072463768" />
         <entry key="app/src/main/res/layout/fragment_livedata_test1.xml" value="0.2164855072463768" />
         <entry key="app/src/main/res/layout/fragment_livedata_test2.xml" value="0.2164855072463768" />
+        <entry key="app/src/main/res/layout/fragment_viewmodel_af_test.xml" value="0.22418478260869565" />
       </map>
     </option>
   </component>
