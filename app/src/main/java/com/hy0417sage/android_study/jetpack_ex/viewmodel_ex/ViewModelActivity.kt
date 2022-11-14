@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.hy0417sage.android_study.R
 import com.hy0417sage.android_study.databinding.ActivityViewbindingTestBinding
 import com.hy0417sage.android_study.databinding.ActivityViewmodelTestBinding
 
@@ -16,12 +17,20 @@ class ViewModelActivity : AppCompatActivity() {
 
     lateinit var viewModel: ViewModelTest
 
+    val manager = supportFragmentManager //fragment 사용
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityViewmodelTestBinding.inflate(layoutInflater)
         val view = binding.root
-
         setContentView(view)
+
+        val transformations = manager.beginTransaction()
+        val fragment = ViewModelFragment()
+        transformations.replace(R.id.frameArea, fragment)
+        transformations.addToBackStack(null)
+        transformations.commit()
+
         Log.d(TAG, "onCreate")
 
         viewModel = ViewModelProvider(this).get(ViewModelTest::class.java)
@@ -49,7 +58,6 @@ class ViewModelActivity : AppCompatActivity() {
             //뷰 모델 일 때
             viewModel.minusValue()
             binding.textResult1.text = viewModel.getCount().toString()
-
         }
 
     }
