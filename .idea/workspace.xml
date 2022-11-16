@@ -24,6 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -50,6 +52,9 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -57,6 +62,7 @@
       <recent name="com.hy0417sage.android_study.jetpack_ex.livedata_viewmodel_ex" />
     </key>
     <key name="android.template.-20977671">
+      <recent name="com.hy0417sage.android_study.jetpack_ex.retrofit_ex" />
       <recent name="com.hy0417sage.android_study.jetpack_ex.viewmodel_ex.activity_fragment" />
       <recent name="com.hy0417sage.android_study.jetpack_ex.viewmodel_ex" />
       <recent name="com.hy0417sage.android_study.jetpack_ex.livedata_ex" />

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.hy0417sage.android_study">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,19 +16,19 @@
         android:theme="@style/Theme.AndroidStudy"
         tools:targetApi="31">
         <activity
-            android:name=".ViewModelAFActivity"
+            android:name=".RetrofitActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewModelActivity"
+            android:name=".jetpack_ex.viewmodel_ex.activity_fragment.ViewModelAFActivity"
             android:exported="false" />
         <activity
-            android:name=".LiveDataViewModelTestActivity"
+            android:name=".jetpack_ex.viewmodel_ex.ViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewModelTestActivity"
+            android:name=".jetpack_ex.livedata_ex.livedata_viewmodel_ex.LiveDataViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".LiveDataTestActivity"
+            android:name=".jetpack_ex.livedata_ex.LiveDataActivity"
             android:exported="false" />
         <activity
             android:name=".jetpack_ex.JetpackStudyActivity"
